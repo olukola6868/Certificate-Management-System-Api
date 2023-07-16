@@ -168,11 +168,11 @@ namespace CertificateManagementApi.Service.Implementation
                 Signature = certificate.Signature,
 
             }).ToList();
-            foreach(var certificate in certificates)
-            {
-                certificate.isGenerated = true;
-            }
-             await _certificateRepository.UpdateCertToTrue(certificates);
+            // foreach(var certificate in certificates)
+            // {
+            //     certificate.isGenerated = true;
+            // }
+            //  await _certificateRepository.UpdateCertToTrue(certificates);
         
             
             return new CertificatesResponseModels
